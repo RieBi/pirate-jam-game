@@ -1,1 +1,1 @@
-All sounds and music are placed either in this or the nested folders.
+All sprites, spritesheets, tilesheets, etc. are placed either in this or the nested folders.
