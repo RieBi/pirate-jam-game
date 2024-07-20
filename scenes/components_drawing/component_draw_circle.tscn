@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dog23wb6j5pyh"]
+
+[ext_resource type="Script" path="res://scenes/components_drawing/component_draw_circle.gd" id="1_i21oh"]
+
+[node name="ComponentDrawCircle" type="Node2D"]
+script = ExtResource("1_i21oh")
