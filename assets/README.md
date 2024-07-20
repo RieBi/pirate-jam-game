@@ -1,0 +1,1 @@
+All assets, including but not limited to sprites, tiles, sounds, music, are placed in this or nested folders.
