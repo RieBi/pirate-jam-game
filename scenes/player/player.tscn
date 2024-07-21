@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b71f46hh3k131"]
+[gd_scene load_steps=6 format=3 uid="uid://b71f46hh3k131"]
 
 [ext_resource type="PackedScene" uid="uid://dog23wb6j5pyh" path="res://scenes/components_drawing/component_draw_circle.tscn" id="1_gmpdr"]
 [ext_resource type="PackedScene" uid="uid://cqb2beooeomak" path="res://scenes/components/component_player_movement.tscn" id="2_qv6gq"]
 [ext_resource type="PackedScene" uid="uid://ddp3l6as14cjw" path="res://scenes/components/component_player_health.tscn" id="3_vtdfu"]
+[ext_resource type="PackedScene" uid="uid://bvxub0jmvbuwn" path="res://scenes/components/component_player_shoot.tscn" id="4_vgb1n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5cx2a"]
 radius = 30.0
@@ -28,3 +29,6 @@ player = NodePath("..")
 
 [node name="ComponentPlayerHealth" parent="UI" instance=ExtResource("3_vtdfu")]
 position = Vector2(2, 3)
+
+[node name="ComponentPlayerShoot" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_vgb1n")]
+player = NodePath("..")
