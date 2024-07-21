@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5o4c88wju1ve"
+path="res://.godot/imported/Shade Damaged.ogg-553db4a877c0110cc431d394d26d5b51.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Shade Damaged.ogg"
+dest_files=["res://.godot/imported/Shade Damaged.ogg-553db4a877c0110cc431d394d26d5b51.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
