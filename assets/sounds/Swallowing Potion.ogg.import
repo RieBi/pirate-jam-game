@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dt5p6r1f0sg0j"
+path="res://.godot/imported/Swallowing Potion.ogg-5e2b7632688a2f72fbf9679e3c31a81b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Swallowing Potion.ogg"
+dest_files=["res://.godot/imported/Swallowing Potion.ogg-5e2b7632688a2f72fbf9679e3c31a81b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

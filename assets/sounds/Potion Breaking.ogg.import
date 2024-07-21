@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dba2lcb46bv6v"
+path="res://.godot/imported/Potion Breaking.ogg-d406019e1df72321ad91a33c38acd948.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Potion Breaking.ogg"
+dest_files=["res://.godot/imported/Potion Breaking.ogg-d406019e1df72321ad91a33c38acd948.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

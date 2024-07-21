@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b0f5xdg8tsnq6"
+path="res://.godot/imported/Bottle Foley 2.ogg-4672aeecb1c95a5216b549bc7b74eadd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Bottle Foley 2.ogg"
+dest_files=["res://.godot/imported/Bottle Foley 2.ogg-4672aeecb1c95a5216b549bc7b74eadd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
