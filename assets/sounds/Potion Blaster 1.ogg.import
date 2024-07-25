@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://boqmmys5qbim0"
+path="res://.godot/imported/Potion Blaster 1.ogg-40c9894299c7025203d120d6b2a9d46c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Potion Blaster 1.ogg"
+dest_files=["res://.godot/imported/Potion Blaster 1.ogg-40c9894299c7025203d120d6b2a9d46c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
