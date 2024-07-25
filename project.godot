@@ -15,6 +15,10 @@ run/main_scene="res://scenes/level/world.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 move_up={
@@ -47,11 +51,18 @@ shoot={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_3="enemy"
+2d_physics/layer_5="projectile"
+
 [physics]
 
 2d/default_gravity=0.0
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

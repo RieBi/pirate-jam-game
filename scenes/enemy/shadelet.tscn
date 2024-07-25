@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvj2qiungnn0q"]
+
+[ext_resource type="PackedScene" uid="uid://jn5rlelv5584" path="res://scenes/components/component_enemy_chasing.tscn" id="1_jvqoo"]
+[ext_resource type="Texture2D" uid="uid://crohr0wrxsuim" path="res://assets/art/Shadelet-Idle (13p by 14p).png" id="2_lj6ei"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rdrp"]
+atlas = ExtResource("2_lj6ei")
+region = Rect2(0, 0, 13, 14)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_di2q4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rdrp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Shadelet" type="CharacterBody2D"]
+
+[node name="ComponentEnemyChasing" parent="." node_paths=PackedStringArray("enemy") instance=ExtResource("1_jvqoo")]
+enemy = NodePath("..")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_di2q4")
+autoplay = "default"

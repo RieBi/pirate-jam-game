@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://nqg35j4yw0v3"]
+[gd_scene load_steps=5 format=3 uid="uid://nqg35j4yw0v3"]
 
 [ext_resource type="PackedScene" uid="uid://b71f46hh3k131" path="res://scenes/player/player.tscn" id="1_mf8h3"]
 [ext_resource type="Texture2D" uid="uid://diph2usa868ki" path="res://icon.svg" id="2_j07qj"]
+[ext_resource type="PackedScene" uid="uid://cvj2qiungnn0q" path="res://scenes/enemy/shadelet.tscn" id="3_c400y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgrwu"]
 size = Vector2(128, 127)
@@ -21,3 +22,7 @@ texture = ExtResource("2_j07qj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
 position = Vector2(53, 54.5)
 shape = SubResource("RectangleShape2D_fgrwu")
+
+[node name="Shadelet" parent="." instance=ExtResource("3_c400y")]
+position = Vector2(117, 315)
+scale = Vector2(4, 4)
