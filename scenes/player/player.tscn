@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://b71f46hh3k131"]
+[gd_scene load_steps=8 format=3 uid="uid://b71f46hh3k131"]
 
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_3gpgp"]
 [ext_resource type="PackedScene" uid="uid://dog23wb6j5pyh" path="res://scenes/components_drawing/component_draw_circle.tscn" id="1_gmpdr"]
 [ext_resource type="PackedScene" uid="uid://cqb2beooeomak" path="res://scenes/components/component_player_movement.tscn" id="2_qv6gq"]
 [ext_resource type="PackedScene" uid="uid://ddp3l6as14cjw" path="res://scenes/components/component_player_health.tscn" id="3_vtdfu"]
@@ -8,9 +9,13 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_5cx2a"]
 radius = 30.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qk0ov"]
+radius = 33.0
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
-collision_mask = 5
+collision_mask = 4
 motion_mode = 1
+script = ExtResource("1_3gpgp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color(1, 0, 1, 1)
@@ -33,3 +38,11 @@ position = Vector2(2, 3)
 
 [node name="ComponentPlayerShoot" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_vgb1n")]
 player = NodePath("..")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_qk0ov")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

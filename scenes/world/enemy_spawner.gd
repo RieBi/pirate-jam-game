@@ -24,7 +24,7 @@ func spawn_shadelet() -> void:
 	var instance = shadelet_resource.instantiate() as CharacterBody2D
 	instance.position = pos
 	
-	get_tree().root.add_child(instance)
+	get_parent().add_child(instance)
 
 func get_random_position() -> Vector2:
 	var origin: Vector2 = -player.get_viewport_transform().origin
