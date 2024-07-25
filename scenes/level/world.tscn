@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b71f46hh3k131" path="res://scenes/player/player.tscn" id="1_mf8h3"]
 [ext_resource type="Texture2D" uid="uid://diph2usa868ki" path="res://icon.svg" id="2_j07qj"]
-[ext_resource type="PackedScene" uid="uid://cvj2qiungnn0q" path="res://scenes/enemy/shadelet.tscn" id="3_c400y"]
+[ext_resource type="PackedScene" uid="uid://ckga00ygnj187" path="res://scenes/world/enemy_spawner.tscn" id="4_0l6f3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgrwu"]
 size = Vector2(128, 127)
@@ -23,6 +23,5 @@ texture = ExtResource("2_j07qj")
 position = Vector2(53, 54.5)
 shape = SubResource("RectangleShape2D_fgrwu")
 
-[node name="Shadelet" parent="." instance=ExtResource("3_c400y")]
-position = Vector2(117, 315)
-scale = Vector2(4, 4)
+[node name="EnemySpawner" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_0l6f3")]
+player = NodePath("../Player")

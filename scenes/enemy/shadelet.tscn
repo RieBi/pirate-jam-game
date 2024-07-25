@@ -19,6 +19,7 @@ animations = [{
 }]
 
 [node name="Shadelet" type="CharacterBody2D"]
+scale = Vector2(4, 4)
 
 [node name="ComponentEnemyChasing" parent="." node_paths=PackedStringArray("enemy") instance=ExtResource("1_jvqoo")]
 enemy = NodePath("..")
@@ -26,3 +27,5 @@ enemy = NodePath("..")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_di2q4")
 autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
