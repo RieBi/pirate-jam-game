@@ -6,11 +6,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_avypy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5h4gi"]
-radius = 30.0
+radius = 60.0
 
 [node name="Projectile" type="RigidBody2D"]
-collision_layer = 2
-collision_mask = 0
+collision_layer = 16
+collision_mask = 4
+custom_integrator = true
+max_contacts_reported = 10
+contact_monitor = true
 script = ExtResource("1_ijfho")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -33,12 +36,15 @@ emission_shape = 1
 emission_sphere_radius = 10.0
 spread = 180.0
 gravity = Vector2(0, 0)
-initial_velocity_min = 20.0
-initial_velocity_max = 40.0
+initial_velocity_min = 60.0
+initial_velocity_max = 120.0
 color = Color(1, 1, 0, 1)
 
 [node name="Area2D" type="Area2D" parent="Explosion"]
 collision_layer = 0
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion/Area2D"]
 shape = SubResource("CircleShape2D_5h4gi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
